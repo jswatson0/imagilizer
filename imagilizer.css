@@ -1,5 +1,16 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -box-sizing: border-box;
+}
+
 html, body {
-  background: #161616 url('http://www.thirdprestige.com/assets/layout/bg-e119516dcb103e3ca18d567983c1f3f2.png');
+/*  background: #161616 url('http://www.thirdprestige.com/assets/layout/bg-e119516dcb103e3ca18d567983c1f3f2.png');
+*/
+}
+div { 
+  margin: 0px;
+  padding: 10px;
 }
 
 #container {
@@ -7,25 +18,39 @@ html, body {
   width: 760px;
 }
 
-h1 {
-  color: #FEFEFE;
+h1,h3 {
+  color: black;
   font-family: 'Denk One', sans-serif;
-  padding: 1em;
-}
+  margin-top: 10px;
+/*  padding: 1em;*/
 
+}
+#slides {
+  text-decoration: none;
+  margin: 0px;
+
+}
 #panel {
   /*background: rgba(200, 200, 200, 0.3);*/
-  border-top: solid #eee 1px;
+  
   float: left; 
-  padding-top: 40px;
   text-align: center;
-  width: 60%;
+  width: 30%;
+}
+  #panel:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
-#panel img {
+#slides img {
   border-radius: 2px;
-  max-width: 100%;
+  width: 500px;
 }
+
 
 #sidebar {
   background: rgba(160, 160, 160, 0.2);
@@ -33,6 +58,7 @@ h1 {
   min-height: 500px;
   padding-top: 10px;
   width: 30%;
+  margin-top: 60px;
 }
 
 #sidebar img {
@@ -51,3 +77,5 @@ h1 {
   background: rgba(240, 160, 160, 0.3);
   opacity: 0.8;
 }
+
+
